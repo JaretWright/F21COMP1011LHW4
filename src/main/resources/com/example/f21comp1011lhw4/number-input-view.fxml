@@ -14,16 +14,16 @@
          <children>
             <HBox alignment="CENTER" spacing="10.0">
                <children>
-                  <TextField promptText="Enter Phone Number" />
-                  <Button mnemonicParsing="false" text="Submit" />
+                  <TextField fx:id="phoneNumberTextField" promptText="Enter Phone Number" />
+                  <Button mnemonicParsing="false" onAction="#assessPhoneNumber" text="Submit" />
                </children>
             </HBox>
             <VBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Label text="Area Code" />
-                  <Label text="City Code" />
-                  <Label text="XXXX" />
-                  <Label fx:id="errorMsg" text="Label" />
+                  <Label fx:id="areaCodeLabel" text="Area Code" />
+                  <Label fx:id="cityCodeLabel" text="City Code" />
+                  <Label text="XXXX" fx:id="xxxxLabel" />
+                  <Label fx:id="errorMsgLabel" text="Label" />
                </children>
             </VBox>
          </children>
